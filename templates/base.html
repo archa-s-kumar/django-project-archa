@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Fix</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<header>
+    <h1>Drive Fix</h1>
+    <p>Vehicle Service and Ride Management System</p>
+</header>
+
+<nav>
+    <ul>
+        <li>
+            <a href="{% url 'home' %}"
+               class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="{% url 'about' %}"
+               class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="{% url 'contact' %}"
+               class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">
+                Contact
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer>
+    <p>© 2026 Drive Fix | Developed by ARCHA S KUMAR</p>
+</footer>
+
+</body>
+</html>

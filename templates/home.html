@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="hero">
+
+    <h2>Welcome to Drive Fix</h2>
+
+    <p>
+        Your one-stop solution for vehicle servicing and ride booking.
+        Book rides, schedule vehicle services, track service status,
+        and enjoy hassle-free transportation all in one platform.
+    </p>
+
+    <a href="{% url 'contact' %}" class="btn">
+        Contact Us
+    </a>
+
+</section>
+
+<section class="about-home">
+
+    <h2>Why Choose Drive Fix?</h2>
+
+    <p>
+        Drive Fix is a web-based Vehicle Service and Ride Management System
+        designed to make transportation and vehicle maintenance simple,
+        fast, and reliable. Our platform connects users, drivers,
+        and service providers in one convenient system.
+    </p>
+
+</section>
+
+<section class="services">
+
+    <h2>Our Services</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Ride Booking</h3>
+            <p>
+                Book rides quickly and travel safely with experienced drivers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Vehicle Service</h3>
+            <p>
+                Schedule vehicle maintenance and servicing from trusted service centers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Status Tracking</h3>
+            <p>
+                Track your ride and vehicle service requests in real time.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="features">
+
+    <h2>Key Features</h2>
+
+    <ul>
+        <li>✔ Easy Ride Booking</li>
+        <li>✔ Online Vehicle Service Scheduling</li>
+        <li>✔ Real-Time Service Tracking</li>
+        <li>✔ Secure Online Payments</li>
+        <li>✔ Driver and Service Provider Management</li>
+        <li>✔ User-Friendly Interface</li>
+    </ul>
+
+</section>
+
+<section class="mission">
+
+    <h2>Our Mission</h2>
+
+    <p>
+        Our mission is to provide customers with a reliable platform that
+        combines transportation and vehicle servicing into a single system,
+        improving convenience, efficiency, and customer satisfaction.
+    </p>
+
+</section>
+
+{% endblock %}
